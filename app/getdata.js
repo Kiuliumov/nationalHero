@@ -6,7 +6,7 @@ async function getData(id) {
     }
     const data = await response.json();
 
-    if (id = 'all'){
+    if (id == 'all'){
       return data;
     }
     return data[id];
