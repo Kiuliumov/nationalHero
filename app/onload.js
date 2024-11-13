@@ -3,7 +3,7 @@ import getData  from "./getdata.js"
 
 async function giveID(){
     const id = getIdFromUrl()
-    if (id = 'all'){
+    if (id =='all'){
         const p = document.getElementsByTagName('p')[0]
         const data = await getData(id);
         p.innerHTML = JSON.stringify(data);
