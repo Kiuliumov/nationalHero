@@ -5,6 +5,10 @@ async function getData(id) {
       throw new Error('There was an error in retrieving data.');
     }
     const data = await response.json();
+
+    if (id = 'all'){
+      return data;
+    }
     return data[id];
   } catch (error) {
     console.error('Error fetching or parsing JSON file:', error);
