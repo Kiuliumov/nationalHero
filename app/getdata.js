@@ -1,15 +1,14 @@
-function getData(id){
-  const fs = require('fs');
-
+async function getData(id) {
   try {
-    const jsonString = fs.readFileSync('data.json', 'utf8');
-    const data = JSON.parse(jsonString);
-    return data[id]
+    const response = await fetch('data.json');
+    if (!response.ok) {
+      throw new Error('There was an error in retrieving data.');
+    }
+    const data = await response.json();
+    return data[id];
   } catch (error) {
-    console.error('Error reading or parsing JSON file:', error);
+    console.error('Error fetching or parsing JSON file:', error);
   }
-
 }
 
-
-module.exports = getData
+export default getData;

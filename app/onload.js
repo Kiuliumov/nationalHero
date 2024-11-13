@@ -1,6 +1,7 @@
 import getIdFromUrl from "./getIdFromUrl.js"
+import getData  from "./getdata.js"
 
-function giveID(){
+async function giveID(){
     const id = getIdFromUrl()
     if (id > 8){
         const p = document.getElementsByTagName('p')[0]
@@ -9,7 +10,8 @@ function giveID(){
 
     }
     const p = document.getElementsByTagName('p')[0]
-    p.innerHTML = id;
+    const data = await getData(id);
+   p.innerHTML = JSON.stringify(data);
     
 }
 

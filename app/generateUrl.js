@@ -5,5 +5,3 @@ function generateUrl(id){
 }
 
 module.exports = generateUrl;
-
-console.log(generateUrl(1));
