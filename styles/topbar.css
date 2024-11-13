@@ -17,7 +17,19 @@
     border: 1vw solid white;
 }
   
+.background{
+    background-color: white;
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 1em;
+}
 
+.text{
+    background-color: white;
+    padding: 1em;    
+    border: 1px solid black;
+
+}
 
 
 

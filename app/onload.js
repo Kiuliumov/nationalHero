@@ -5,10 +5,13 @@ async function giveID(){
     const id = getIdFromUrl()
     const data = await getData(id);    
     const title = document.getElementById('title')
+    const placeholder = document.getElementById('placeholder-image');
+    const audio = document.getElementById('audio');
 
     title.innerHTML = data['title'];
-    const placeholder = document.getElementById('placeholder-image');
     placeholder.src = data['avatar'];
+    audio.src = data['audio'];
+    console.log(audio.src);
         
 }
     
