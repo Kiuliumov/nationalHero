@@ -3,24 +3,14 @@ import getData  from "./getdata.js"
 
 async function giveID(){
     const id = getIdFromUrl()
-    if (id =='all'){
-        const p = document.getElementsByTagName('p')[0]
-        const data = await getData(id);
-        p.innerHTML = JSON.stringify(data);
+    const data = await getData(id);    
+    const title = document.getElementById('title')
+
+    title.innerHTML = data['title'];
+    const placeholder = document.getElementById('placeholder-image');
+    placeholder.src = data['avatar'];
         
-    } else {
-        if (id >= 8){
-            const p = document.getElementsByTagName('p')[0]
-            p.innerHTML = 'Id not found.'
-            return;
-    
-        }
-    
-        const p = document.getElementsByTagName('p')[0]
-        const data = await getData(id);
-        p.innerHTML = JSON.stringify(data);
-    }
-    
 }
+    
 
 window.addEventListener('load', giveID)

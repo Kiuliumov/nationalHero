@@ -5,12 +5,12 @@
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 0.5em;
 }
 
-.container{
-    width: 1920px;
+img{
+    display: block;
+    width: 100%;
 }
+
+
