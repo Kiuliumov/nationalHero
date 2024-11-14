@@ -7,10 +7,12 @@ async function giveID(){
     const title = document.getElementById('title')
     const placeholder = document.getElementById('placeholder-image');
     const audio = document.getElementById('audio');
+    const text = document.getElementById('text');
 
     title.innerHTML = data['title'];
     placeholder.src = data['avatar'];
     audio.src = data['audio'];
+    text.innerHTML = data['text']
     console.log(audio.src);
         
 }
