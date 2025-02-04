@@ -22,8 +22,9 @@ body {
     text-align: center;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Add this to enable flex column layout */
-    justify-content: space-between; /* Makes sure content is spaced, pushing footer to bottom */
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
     align-items: center;
 }
 
