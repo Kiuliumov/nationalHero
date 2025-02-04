@@ -14,18 +14,10 @@ ul {
     display: flex;
     gap: 2em;
     flex-direction: column;
-}
-
-body {
-    font-family: 'MedievalSharp', cursive;
-    background-color: #013601;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em;
-    align-items: center;
+    justify-content: center; /* Center buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    height: 100%; /* Take full height of the parent */
+    width: 100%; /* Ensure the container takes full width */
 }
 
 li {
@@ -34,6 +26,19 @@ li {
     box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
     border-radius: 10px;
     color: black;
+    width: 80%; /* Make the buttons take up 80% of the available width */
+    text-align: center; /* Center text within the button */
+}
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #013601;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+    align-items: center; /* Center the content horizontally */
 }
 
 footer {
