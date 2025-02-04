@@ -7,6 +7,18 @@
 a {
     text-decoration: none;
     color: inherit;
+    width: 80%;
+}
+
+a li {
+    display: block;
+    padding: 1em 1.5em;
+    background: #E0AD74;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+    border-radius: 10px;
+    color: black;
+    text-align: center; 
+    width: 100%;
 }
 
 ul {
@@ -20,15 +32,7 @@ ul {
     width: 100%;
 }
 
-li {
-    padding: 1em 1.5em;
-    background: #E0AD74;
-    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
-    border-radius: 10px;
-    color: black;
-    width: 80%; 
-    text-align: center; 
-}
+
 
 body {
     font-family: 'MedievalSharp', cursive;
