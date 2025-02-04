@@ -26,8 +26,9 @@ li {
     box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
     border-radius: 10px;
     color: black;
-    width: 80%; /* Make the buttons take up 80% of the available width */
+    width: 80%; /* Keep buttons at 80% of the available width */
     text-align: center; /* Center text within the button */
+    font-size: 1.5em; /* Increase font size without changing box size */
 }
 
 body {
