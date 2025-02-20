@@ -1,7 +1,7 @@
 body {
     font-family: 'MedievalSharp', cursive;
     background-color: #013601;
-     color: #fff;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -18,12 +18,13 @@ a {
     border-radius: 1em;
 }
 
-nav{
+nav {
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 main {
     display: flex;
@@ -44,7 +45,8 @@ main {
     width: 90%;
     max-height: 100vh;
     text-align: center;
-    overflow: auto
+    overflow: auto;
+    position: relative; /* Add relative positioning */
 }
 
 .top-bar {
@@ -56,21 +58,19 @@ main {
 .background h1 {
     background: #E0AD74;
     color: #000;
-    padding: 10px;
+    padding: 0.5em;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
 }
 
 .top-bar-image img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     margin: 15px 0;
-    border-radius: 1em;
-    border: 5px solid rgb(220, 160, 100);
 }
 
-p.text{
+p.text {
     background-color: #5e7046; 
     overflow: hidden;
 }
@@ -88,6 +88,8 @@ p.text{
     box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
 }
 
-audio{
-    margin: 1em;
+audio::-webkit-media-controls-panel {
+    background: #E0AD74;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
 }
