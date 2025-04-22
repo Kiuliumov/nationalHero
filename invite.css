@@ -55,20 +55,35 @@ body {
         margin-top: 1em;
         font-size: 1.8rem;
         font-weight: 600;
-        color: #1e1e2f;
-        background: linear-gradient(135deg, #00c9ff, #92fe9d);
+        color: #000000;
         border: none;
         border-radius: 50px;
-        box-shadow: 0 4px 20px rgba(0, 201, 255, 0.4);
-        transition: all 0.3s ease;
         cursor: pointer;
+        transition: transform 0.3s ease;
+    
+        background: linear-gradient(270deg, #00c9ff, #92fe9d, #8a2be2, #9b30ff, #00c9ff);
+        background-size: 1000% 1000%;
+        animation: gradientFlow 11s ease infinite;
+        box-shadow: 0 4px 20px rgba(0, 201, 255, 0.4);
     }
-
+    
+    @keyframes gradientFlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
     .button:hover {
         transform: translateY(-3px);
-        background: linear-gradient(135deg, #00e1ff, #b0ffc9);
         box-shadow: 0 6px 25px rgba(0, 201, 255, 0.6);
     }
+    
 
     h1 {
         font-size: 2rem;
