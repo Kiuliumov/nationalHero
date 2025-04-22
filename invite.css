@@ -1,0 +1,102 @@
+/* Hide content in portrait mode */
+body {
+    display: none; /* Hide content by default */
+}
+
+@media (orientation: landscape) {
+    body {
+        display: flex; /* Show content only in landscape mode */
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+        flex-direction: column; /* Align the content vertically */
+        justify-content: center; /* Center content vertically */
+        padding: 2em;
+    }
+}
+
+.container {
+    background-color: rgba(30, 30, 47, 0.95);
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    border: 8px solid #4a4a8c;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 1em 0.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e1e2f;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d); /* Light aqua and green */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 201, 255, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #00e1ff, #b0ffc9); /* Light blue and soft green */
+    box-shadow: 0 6px 25px rgba(0, 201, 255, 0.6);
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?t=st=1745328389~exp=1745331989~hmac=0737ea7770bdf79f91bf6cf909d93e26d8e1a0b6dbfa285dd204da63bcd1a473&w=996');
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+.top-bar-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5em;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        padding: 0.8em 1.6em;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1em;
+    }
+
+    .container {
+        padding: 1em;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .button {
+        padding: 0.8em 1.5em;
+        font-size: 0.95rem;
+    }
+}
