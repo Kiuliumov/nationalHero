@@ -10,7 +10,6 @@ a {
 }
 
 body {
-    display: none;
     background-image: url('https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?t=st=1745328389~exp=1745331989~hmac=0737ea7770bdf79f91bf6cf909d93e26d8e1a0b6dbfa285dd204da63bcd1a473&w=996');
     background-size: cover;
     background-position: center center;
@@ -19,7 +18,7 @@ body {
     font: 400 16px/1.6 'Lato', sans-serif;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1020px) {
     body {
         display: flex;
         flex-direction: column;
@@ -44,9 +43,10 @@ body {
     .buttons {
         display: flex;
         align-items: center;
+        flex-direction: row;
         justify-content: center;
-        gap: 2.5em;
         flex-wrap: wrap;
+        gap: 1em;
     }
 
     .button {
