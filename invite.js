@@ -5,9 +5,9 @@ function buttonOnClick() {
     
     img.src = 'https://i.ibb.co/xKWxPmGt/Copy-of.png';
     confetti({
-        particleCount: 500,
-        spread: 70,
-        origin: { y: 0.6 }
+        particleCount: 900,
+        spread: 100,
+        origin: { y: 0.5 }
     });
 }
 
