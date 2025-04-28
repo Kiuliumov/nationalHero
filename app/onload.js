@@ -5,6 +5,12 @@ async function giveID() {
     const id = getIdFromUrl();
     const data = await getData(id);
 
+    if(!id){
+        const url = new URL(window.location);
+        url.searchParams.set('id', 1);
+        return;
+    }
+
     setupPageContent(data);
     setupAudioControls();
 }
