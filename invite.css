@@ -129,3 +129,30 @@ h1 {
         padding: 0.8em 2em;
     }
 }
+/* Page load animation */
+body {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button.clicked {
+    animation: pop 0.4s forwards;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
