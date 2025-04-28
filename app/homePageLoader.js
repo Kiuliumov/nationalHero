@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('../data.json')
+    fetch('nationalHero/data.json')
         .then(response => response.json()) 
         .then(data => {
             const list = document.getElementById('heroesList');
