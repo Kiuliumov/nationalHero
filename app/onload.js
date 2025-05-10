@@ -8,6 +8,8 @@ async function giveID() {
     if(!id){
         const url = new URL(window.location);
         url.searchParams.set('id', 1);
+        window.history.pushState({}, '', url);
+        window.location.reload();
         return;
     }
 
@@ -30,8 +32,6 @@ function setupPageContent(data) {
     placeholder.src = data.avatar;
     audio.src = data.audio;
     text.innerHTML = data.text;
-
-    console.log(audio.src);
 }
 
 function setupAudioControls() {
