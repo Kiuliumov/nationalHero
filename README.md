@@ -120,5 +120,5 @@ Scanning the code opens the hero’s detail page directly.
 ### Detail Page
 ![Detail Page Screenshot](screenshots/detail-page.png)
 
-### QR Code
-![](screenshots/qr-to-show.png)
+### Info Box
+![](screenshots/info-box.png)
