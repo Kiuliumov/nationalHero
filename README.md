@@ -121,4 +121,4 @@ Scanning the code opens the hero’s detail page directly.
 ![Detail Page Screenshot](screenshots/detail-page.png)
 
 ### Info Box
-![](screenshots/info-box.png)
+![](screenshots/info-box.jpg)
